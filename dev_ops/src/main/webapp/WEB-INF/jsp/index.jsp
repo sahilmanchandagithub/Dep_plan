@@ -10,7 +10,7 @@
 
 
 		<!-- Website CSS style -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/registration.css" rel="stylesheet">
 
 		<!-- Website Font style -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -22,11 +22,12 @@
 		<title>Admin</title>
 	</head>
 	<body>
+
 		<div class="container">
 			<div class="row main">
 				<div class="main-login main-center">
 				<h5>Sign up once and watch any of our free demos.</h5>
-					<form class="" method="post" action="#">
+					<form class="" method="post" action="#" id = "formid" onsubmit = "return make_json(this);">
 						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Your Name</label>
@@ -79,7 +80,7 @@
 						</div>
 
 						<div class="form-group ">
-							<a href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+							<a href="http://localhost:8088/login.jsp" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button" onclick="make_json()" >Register</a>
 						</div>
 						
 					</form>
@@ -91,5 +92,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+   
+    <script>
+  
+   function make_json(form){
+	 
+	   
+	   function Redirect() {
+           window.location="http://localhost:8088/login";
+        }
+	  
+	   var user	={
+			   
+			   "name"     = form.name.value,
+			   "email"    = form.email.value,
+			   "password" = form.password.value,
+			   "username" = form.username.value 
+			   
+	   }
+   } 	
+   
+    </script> 
+    
+    
+    
 	</body>
+	
 </html>
