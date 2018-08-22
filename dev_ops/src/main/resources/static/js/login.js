@@ -16,3 +16,23 @@ $(function() {
 	});
 
 });
+
+
+$(document).ready(function()
+
+		{
+			
+		$('#button').click(function()
+				  		 	
+
+		{
+			
+		
+			console.log("clicked");
+			alert("Login is succesfull");
+            window.location.replace("/homepage");
+			
+		})
+
+		})
+		

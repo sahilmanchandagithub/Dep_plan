@@ -6,7 +6,7 @@ public class user {
 	public String name;
 	public String email;
 	public String password;
-	public String ussername;
+	public String username;
 	
 	
 	public String getName() {
@@ -27,11 +27,11 @@ public class user {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getUssername() {
-		return ussername;
+	public String getUsername() {
+		return username;
 	}
-	public void setUssername(String ussername) {
-		this.ussername = ussername;
+	public void setUsername(String ussername) {
+		this.username = ussername;
 	}
 	
 

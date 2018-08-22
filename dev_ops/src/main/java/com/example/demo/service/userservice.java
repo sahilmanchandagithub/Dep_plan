@@ -20,4 +20,18 @@ public class userservice {
 	
 	
 	
+       public void updateuser(user uobj1) {
+		
+		usercreationimpobj.update_user(uobj1);	
+		
+		}	
+	
+	
+       public void deleteuser(String username) {
+   		
+   		usercreationimpobj.delete_user(username);	
+   		
+   		}
+	
+	
 }

@@ -1,11 +1,18 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html lang="en">
+
+<body style="background-image:url(/image/dp.jpg)">
+
+
     <head> 
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="/js/registration.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -27,7 +34,7 @@
 			<div class="row main">
 				<div class="main-login main-center">
 				<h5>Sign up once and watch any of our free demos.</h5>
-					<form class="" method="post" action="#" id = "formid" onsubmit = "return make_json(this);">
+					<form class="" method="post" action="#" name = "formname" id = "formid" onsubmit="return validate();">
 						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Your Name</label>
@@ -80,7 +87,15 @@
 						</div>
 
 						<div class="form-group ">
-							<a href="http://localhost:8088/login.jsp" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button" onclick="make_json()" >Register</a>
+																		
+						<a target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button"  >Register</a> 
+													
+						</div>
+														
+						<div class="form-group">
+										
+							<a   href="http://localhost:8088/login/" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In" >Log In</a>
+											
 						</div>
 						
 					</form>
@@ -93,25 +108,37 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
    
-    <script>
-  
+    <script type="text/javascript">
+ /* 
    function make_json(form){
-	 
 	   
-	   function Redirect() {
+	   	   function Redirect() {
            window.location="http://localhost:8088/login";
         }
-	  
-	   var user	={
+	   	   
+	   	   
+	   
+ var user	= {
 			   
 			   "name"     = form.name.value,
 			   "email"    = form.email.value,
 			   "password" = form.password.value,
 			   "username" = form.username.value 
-			   
-	   }
+			  
+ 				}
+	   
+	   var xhttp = new XMLHttpRequest();
+	    xhttp.onreadystatechange = function() {
+	         if (this.readyState == 4 && this.status == 200) {
+	             alert(this.responseText);
+	         }
+	    };
+	    xhttp.open("POST", "http://localhost:8088/login", true);
+	    xhttp.setRequestHeader("Content-type", "application/json");
+	    xhttp.send("user");
+ 
    } 	
-   
+   */
     </script> 
     
     
