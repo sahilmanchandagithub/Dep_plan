@@ -17,6 +17,15 @@ public class HomepageController {
 		
 		}
 
+		
+		
+		@RequestMapping(value = "/table")
+		public String table ()
+		{
+			System.out.println("You are table creation page ");
+			return "table";
+		
+		}
 	}
 
 

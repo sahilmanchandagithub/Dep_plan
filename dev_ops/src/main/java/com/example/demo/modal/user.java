@@ -4,6 +4,17 @@ package com.example.demo.modal;
 public class user {
 	
 	public String name;
+	public user(String name, String email, String password, String username) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.username = username;
+	}
+	public user() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public String email;
 	public String password;
 	public String username;
