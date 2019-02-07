@@ -13,11 +13,13 @@ public class userservice {
 
 	@Autowired
 	usercreationimp usercreationimpobj;
+	//method name should be small , every new name should be capital
 	
 	public void Addnewuser(user uobj1) {
-		
+		//uobj1 should be readable 
 		usercreationimpobj.create_user(uobj1);
 		
+		//create_user : createUser
 	}
 	
 	
@@ -26,27 +28,27 @@ public class userservice {
 		
 		usercreationimpobj.update_user(uobj1);	
 		
-		}	
+	}	
 	
 	
        public void deleteuser(String username) {
    		
    		usercreationimpobj.delete_user(username);	
    		
-   		}
+   	}
 	
        
        public List<user> fetchuserall() {
       		
       	return 	usercreationimpobj.fetch_all_user();
       		
-      		}
+   	}
        
       public user fetchusersingle(String username) {
      		
          	return 	usercreationimpobj.fetch_user(username);
          		
-         		}
+  	}
 
 
 

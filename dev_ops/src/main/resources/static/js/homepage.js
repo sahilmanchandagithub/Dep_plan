@@ -6,7 +6,9 @@ $('#Create').click(function()
 		  		 	
 
 {
-	window.location.replace("/table");
+	
+	
+	window.top.location.href = "http://localhost:8088/table"; 
 	console.log("clicked");
 
 	

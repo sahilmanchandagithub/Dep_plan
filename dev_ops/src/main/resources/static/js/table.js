@@ -7,10 +7,12 @@ $(document).ready(function () {
 
         cols += '<td><input type="text" class="form-control" name="Date' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="Sequence' + counter + '"/></td>';
-        cols += '<td><input type="text" class="form-control" name="Project category' + counter + '"/></td>';
+       
+	    cols += '<td><input type="text" class="form-control" name="Project category' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="Task Type' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="Task' + counter + '"/></td>';
-        cols += '<td><input type="text" class="form-control" name="Server Name' + counter + '"/></td>';
+      
+	    cols += '<td><input type="text" class="form-control" name="Server Name' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="Owner' + counter + '"/></td>';
         cols += '<td><input type="text" class="form-control" name="Status' + counter + '"/></td>';
        

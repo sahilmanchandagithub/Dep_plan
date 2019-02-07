@@ -62,7 +62,7 @@ public class usercreationimp implements usercreationdao  {
 	@Override
 	public void update_user(user userobj) {
 		
-		jdbcTemplate.update("UPDATE user_information SET NAME = ? ,  EMAIL = ? ,  PASSWORD = ? 	 WHERE USERNAME = ? ", new Object[] { userobj.name,userobj.email,userobj.password,userobj.username });		
+		jdbcTemplate.update("UPDATE user_information SET NAME = ? ,  EMAIL = ? ,  PASSWORD = ? 	 WHERE USERNAME = ? ", new Object[] { userobj.getName(),userobj.getEmail(),userobj.getPassword(),userobj.getUsername() });		
 				System.out.println(userobj.getUsername() + ": Updated");
 				
 		// TODO Auto-generated method stub
@@ -71,15 +71,10 @@ public class usercreationimp implements usercreationdao  {
 
 	@Override
 	public user fetch_user(String username) {
-	
-		
-		
-		
 			
     return	jdbcTemplate.queryForObject("select * from user_information where username = ?",new Object[] { username },new RowMapper<user>() {
     
-    
-			
+  		
 
 			@Override
 			public user mapRow(ResultSet rs, int rowNum) throws SQLException {

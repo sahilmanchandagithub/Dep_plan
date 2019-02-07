@@ -24,5 +24,7 @@ public class registration {
 		
 		 userobj1.Addnewuser(uobj1);
 	}
-}
+	
+	
+	}
 

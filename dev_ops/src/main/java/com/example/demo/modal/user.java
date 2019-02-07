@@ -3,7 +3,13 @@ package com.example.demo.modal;
 
 public class user {
 	
-	public String name;
+	private String name;
+	private String email;
+	private String password;
+	private String username;
+	
+	
+	
 	public user(String name, String email, String password, String username) {
 		super();
 		this.name = name;
@@ -14,11 +20,6 @@ public class user {
 	public user() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public String email;
-	public String password;
-	public String username;
-	
 	
 	public String getName() {
 		return name;

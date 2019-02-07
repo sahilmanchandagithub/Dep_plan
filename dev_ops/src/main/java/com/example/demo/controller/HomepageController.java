@@ -26,6 +26,44 @@ public class HomepageController {
 			return "table";
 		
 		}
+		
+		@RequestMapping(value = "/createsheet")
+		public String createSheet ()
+		{
+			System.out.println("You are table creation page ");
+			return "done";
+		
+		}
+		
+		
+		@RequestMapping(value = "/updatesheet")
+		public String updateSheet ()
+		{
+			System.out.println("You have updated sheet ");
+			return "done";
+		
+		}
+		
+		
+		@RequestMapping(value = "/deletesheet")
+		public String deleteSheet ()
+		{
+			System.out.println("You have delete sheet ");
+			return "done";
+		
+		}
+		
+		
+		@RequestMapping(value = "/fetchsheet")
+		public String fetchsheet ()
+		{
+			System.out.println("You have delete sheet ");
+			return "done";
+		
+		}
+		
+	
+		
 	}
 
 
